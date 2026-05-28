@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavan Kanwar — CV · Deducta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+
+    .label {
+      display: block;
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #4f46e5;
+      border-left: 3px solid #4f46e5;
+      padding-left: 7px;
+      margin-bottom: 10px;
+    }
+
+    .role-block { margin-bottom: 13px; }
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-bottom: 4px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .role-left { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0; }
+    .role-title { font-size: 0.8rem; font-weight: 700; color: #111827; }
+    .role-sep { font-size: 0.75rem; color: #d1d5db; margin: 0 6px; }
+    .role-company { font-size: 0.78rem; font-weight: 600; color: #6366f1; }
+    .role-date { font-size: 0.67rem; color: #9ca3af; font-style: italic; white-space: nowrap; }
+
+    .bul {
+      position: relative;
+      padding-left: 13px;
+      font-size: 0.74rem;
+      color: #374151;
+      line-height: 1.58;
+      margin-bottom: 3px;
+    }
+    .bul::before { content: '—'; position: absolute; left: 0; color: #a5b4fc; font-size: 0.68rem; top: 1px; }
+    .bul strong { color: #111827; font-weight: 600; }
+    .bul.muted { color: #9ca3af; font-style: italic; font-size: 0.68rem; }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 2px 2px 2px 0;
+      line-height: 1.4;
+    }
+
+    .why-label {
+      font-size: 0.63rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6366f1;
+      margin-right: 4px;
+    }
+
+    @media print {
+      * { print-color-adjust: exact !important; -webkit-print-color-adjust: exact !important; }
+      @page { size: A4; margin: 0; }
+      body { background: white !important; padding: 0 !important; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-200 py-8 px-4 print:bg-white print:p-0">
+
+  <!-- Page -->
+  <div class="mx-auto bg-white shadow-2xl print:shadow-none" style="max-width: 794px;">
+
+    <!-- ═══ HEADER ═══ -->
+    <header style="background: #0f172a; padding: 32px 36px 26px 36px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+
+        <div>
+          <h1 style="font-size: 2.35rem; font-weight: 900; color: #ffffff; letter-spacing: -0.025em; line-height: 1; margin-bottom: 8px;">
+            PAVAN KANWAR
+          </h1>
+          <p style="font-size: 0.9rem; font-weight: 500; color: #a5b4fc; margin-bottom: 5px;">
+            AI Product Engineer &nbsp;·&nbsp; Founder &nbsp;·&nbsp; Builder
+          </p>
+          <p style="font-size: 0.68rem; color: #6b7280;">
+            Lean UX &nbsp;·&nbsp; JTBD &nbsp;·&nbsp; LLM-Native Execution &nbsp;·&nbsp; Concept → Production
+          </p>
+        </div>
+
+        <div style="text-align: right; font-size: 0.7rem; color: #d1d5db; line-height: 1.8;">
+          <div>pavank101@gmail.com</div>
+          <div>07946 608 200</div>
+          <div>London, UK</div>
+          <div style="color: #a5b4fc;">linkedin.com/in/pavkanwar</div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Indigo gradient rule -->
+    <div style="height: 3px; background: linear-gradient(90deg, #4f46e5 0%, #818cf8 55%, transparent 100%);"></div>
+
+
+    <!-- ═══ BODY ═══ -->
+    <div style="display: flex; padding: 22px 36px 28px 36px; gap: 26px;">
+
+      <!-- ── LEFT SIDEBAR ── -->
+      <aside style="width: 33%; flex-shrink: 0; border-right: 1px solid #f1f5f9; padding-right: 20px;">
+
+        <!-- CORE STACK -->
+        <section style="margin-bottom: 18px;">
+          <span class="label">Core Stack</span>
+
+          <p style="font-size: 0.63rem; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px;">Backend &amp; AI</p>
+          <div style="margin-bottom: 10px;">
+            <span class="tag">GCP</span><span class="tag">Vertex AI</span>
+            <span class="tag">Python</span><span class="tag">Node.js</span>
+            <span class="tag">FastAPI</span><span class="tag">LiveKit/WebRTC</span>
+            <span class="tag">Claude</span><span class="tag">Cursor</span>
+          </div>
+
+          <p style="font-size: 0.63rem; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px;">Frontend</p>
+          <div style="margin-bottom: 10px;">
+            <span class="tag">React</span><span class="tag">TypeScript</span>
+            <span class="tag">Vue.js</span><span class="tag">Tailwind CSS</span>
+            <span class="tag">Figma</span><span class="tag">iOS (Swift)</span>
+            <span class="tag">Android (Kotlin)</span>
+          </div>
+
+          <p style="font-size: 0.63rem; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px;">Product &amp; Strategy</p>
+          <div>
+            <span class="tag">Lean UX</span><span class="tag">JTBD</span>
+            <span class="tag">Strategyzer Test Cards</span>
+            <span class="tag">Behavioral Economics</span>
+            <span class="tag">UML Mapping</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">HCI</span>
+          </div>
+        </section>
+
+        <div style="height: 1px; background: #f1f5f9; margin: 14px 0;"></div>
+
+        <!-- VENTURES -->
+        <section style="margin-bottom: 18px;">
+          <span class="label">Ventures</span>
+          <p style="font-size: 0.64rem; color: #9ca3af; font-style: italic; margin-bottom: 8px;">Under Bubble Labs (incubator)</p>
+
+          <div style="margin-bottom: 10px;">
+            <p style="font-size: 0.75rem; font-weight: 700; color: #111827; margin-bottom: 2px;">
+              Pre.vu <span style="font-weight: 500; color: #6366f1; font-size: 0.7rem;">· PreVULabs</span>
+            </p>
+            <p style="font-size: 0.68rem; color: #6b7280; line-height: 1.5;">Real-time multi-camera live streaming platform — AI-driven director orchestration, zero-latency edge compute.</p>
+          </div>
+
+          <div>
+            <p style="font-size: 0.75rem; font-weight: 700; color: #111827; margin-bottom: 2px;">
+              SOS.vu <span style="font-weight: 500; color: #6366f1; font-size: 0.7rem;">· SOSLabs</span>
+            </p>
+            <p style="font-size: 0.68rem; color: #6b7280; line-height: 1.5;">Life-critical personal safety platform — multi-agent RL environment, tamper-proof evidence architecture, edge AI triage.</p>
+          </div>
+        </section>
+
+        <div style="height: 1px; background: #f1f5f9; margin: 14px 0;"></div>
+
+        <!-- EDUCATION -->
+        <section>
+          <span class="label">Education</span>
+          <p style="font-size: 0.77rem; font-weight: 700; color: #111827; margin-bottom: 2px;">BSc (Hons) Computer Science</p>
+          <p style="font-size: 0.7rem; color: #6366f1; margin-bottom: 5px;">University of Manchester, UMIST &nbsp;·&nbsp; 2004</p>
+          <p style="font-size: 0.68rem; color: #6b7280; line-height: 1.5;">Specialised in Human-Computer Interaction — usability design and building user trust through data-driven interfaces.</p>
+        </section>
+
+      </aside>
+
+
+      <!-- ── MAIN CONTENT ── -->
+      <main style="flex: 1; min-width: 0;">
+
+        <!-- PROFILE -->
+        <section style="margin-bottom: 18px;">
+          <span class="label">Profile</span>
+          <p style="font-size: 0.76rem; color: #374151; line-height: 1.68;">
+            I am an <strong>AI Product Engineer and Founder</strong> who shapes market-leading products from initial concept to full-stack production, driven by a strategic mission to use technology to save and protect life. Grounded in <strong>Lean UX and Jobs-to-be-Done (JTBD)</strong>, I architect tight, 12-week build-measure-learn feedback loops using <strong>Strategyzer Test and Learning Cards</strong> to rigorously validate hypotheses. By combining Value Proposition design with UML mapping, I pinpoint exact user pains and gains to prioritise features that solve real problems. Whether engineering cryptographic security for emergency evidence or prototyping pixel-perfect React dashboards, I take <strong>total E2E ownership across the stack</strong>. Operating at 10× velocity using Claude and Cursor, I apply behavioural science and startup agility to ensure we build the <em>right</em> product, not just a product.
+          </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+          <span class="label">Experience</span>
+
+          <!-- SOSLabs -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Founding AI Software Engineer</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">SOSLabs.ai</span>
+              </div>
+              <span class="role-date">Feb 2026 – Present</span>
+            </div>
+            <p class="bul"><span class="why-label">Why:</span> Built SOS.VU — a life-critical AI safety platform using LiveKit (WebRTC) to provide <strong>zero-latency triage</strong>, designed to protect users and secure evidence-ready reporting during high-stress incidents.</p>
+            <p class="bul"><span class="why-label">How:</span> Spearheaded E2E architecture blending <strong>native iOS/Android front-end performance</strong> with a GCP and Vertex AI backend. Ran tight user-obsessed feedback loops to refine audio-trigger detection and severity-ranking heuristics via real-world stress testing.</p>
+            <p class="bul"><span class="why-label">Impact:</span> Attracted enterprise acquisition interest by delivering a <strong>sub-second latency, edge-based solution</strong> that solved critical industrial workforce safety pains.</p>
+          </div>
+
+          <!-- PreVULabs -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Founding AI Software Engineer</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">PreVULabs.ai</span>
+              </div>
+              <span class="role-date">Nov 2023 – Mar 2026</span>
+            </div>
+            <p class="bul">Rebuilt the entire Python/FastAPI backend and native mobile app (Swift/Kotlin), engineering a <strong>proprietary cryptographic hashing and temporal security protocol</strong> to ensure unforgeable, tamper-proof, evidence-ready multi-device video streams.</p>
+            <p class="bul">Prototyped and engineered a React-based <strong>AI Director dashboard</strong> — balancing automated AI camera prioritisation with frictionless manual overrides for human directors managing thousands of concurrent live streams.</p>
+            <p class="bul">Sole technical decision-maker, refactoring front-end and back-end at <strong>10× velocity with Cursor</strong>, shifting product strategy based on tight user feedback loops alone.</p>
+          </div>
+
+          <!-- Mercor -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">AI Software Engineer &amp; Designer</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">Mercor</span>
+              </div>
+              <span class="role-date">Apr 2026 – Present &nbsp;|&nbsp; Oct – Dec 2025</span>
+            </div>
+            <p class="bul">Engineered human-in-the-loop training pipelines to refine frontier AI models for TypeScript and Python code generation — the <strong>critical bridge between backend LLM output and front-end UX quality</strong>.</p>
+            <p class="bul">Evaluated and refactored generated code to stringent production standards, ensuring AI output respected formal design elements and business-critical logic.</p>
+          </div>
+
+          <!-- Freelance -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Designer, Developer &amp; UX Lead</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">Freelance / Self-Employed</span>
+              </div>
+              <span class="role-date">Jul 2014 – 2024</span>
+            </div>
+            <p class="bul"><strong>RENTR.co:</strong> UX/UI audit combining Value Proposition design with UML process flows to map user pains/gains, optimising an 11-step landlord journey to 3 steps via JTBD prioritisation.</p>
+            <p class="bul"><strong>Agency VUi &amp; Gumsaver:</strong> Built a full-stack digital agency; 12-week build-measure-learn cycles governed by strict hypothesis testing and hands-on pixel-perfect front-end execution.</p>
+          </div>
+
+          <!-- HCL -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Senior Technical Manager (Global)</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">HCL Technologies</span>
+              </div>
+              <span class="role-date">Jun 2022 – Jul 2023</span>
+            </div>
+            <p class="bul">Brought startup agility to enterprise: T-shirt sizing and agile prioritisation to ship <strong>complex ERP, CRM, and AI-driven Metahuman chatbot systems</strong>.</p>
+            <p class="bul">Architected a missing <strong>132-page Figma design system</strong>, forcing a product-centric, user-obsessed mindset onto legacy print-focused guidelines.</p>
+          </div>
+
+          <!-- T. Rowe Price -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Senior Software Engineer</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">T. Rowe Price</span>
+              </div>
+              <span class="role-date">Jan – Mar 2022</span>
+            </div>
+            <p class="bul">Engineered a custom <strong>TypeScript component library</strong> for business-critical BI tools, translating complex financial data requirements into highly usable front-end components for hedge fund managers.</p>
+          </div>
+
+          <!-- McKinsey -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Design &amp; Strategy Lead</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">McKinsey &amp; Company</span>
+              </div>
+              <span class="role-date">Jul – Dec 2015</span>
+            </div>
+            <p class="bul">Combined UML modelling, Value Proposition design, and user journey mapping to consolidate complex workflows into a single unified interface — tracking pains and gains across fragmented systems.</p>
+          </div>
+
+          <!-- PwC -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">UX Behavioural Research Lead</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">PwC</span>
+              </div>
+              <span class="role-date">Sep – Dec 2019</span>
+            </div>
+            <p class="bul">Integrated <strong>behavioural economics</strong> with UX research, mapping cognitive biases to craft data-driven Test/Learning Cards that accurately tracked and shifted user behaviour.</p>
+          </div>
+
+          <!-- Google -->
+          <div class="role-block">
+            <div class="role-header">
+              <div class="role-left">
+                <span class="role-title">Interaction Design Lead</span>
+                <span class="role-sep">·</span>
+                <span class="role-company">Google — gTech Engineering</span>
+              </div>
+              <span class="role-date">Jul 2014 – Jan 2015</span>
+            </div>
+            <p class="bul">Applied Lean UX to prioritise "must-have" features during a live infrastructure overhaul of platforms managing <strong>£100bn+ in ad revenue</strong>.</p>
+            <p class="bul">Bypassed restrictive internal systems by engineering custom CSS/TypeScript components — replacing SQL workflows with intuitive <strong>Material Design drill-down UIs</strong> informed by rigorous hypothesis testing and user research.</p>
+          </div>
+
+          <!-- Footnote -->
+          <p style="font-size: 0.64rem; color: #9ca3af; font-style: italic; margin-top: 6px;">
+            Earlier roles at Novartis available on request — establishing a 10+ year track record of Lean UX research, rapid prototyping, and full-stack execution.
+          </p>
+
+        </section>
+      </main>
+    </div>
+
+  </div><!-- /page -->
+
+  <!-- Footer: visible in browser, hidden when printing -->
+  <div class="no-print" style="text-align: center; padding: 20px 0 28px 0;">
+    <p style="font-size: 0.65rem; color: #9ca3af; margin-bottom: 6px;">
+      To save as PDF: File → Print → Save as PDF &nbsp;·&nbsp; Paper: A4 &nbsp;·&nbsp; Margins: None
+    </p>
+    <p style="font-size: 0.65rem; color: #c7d2fe; letter-spacing: 0.05em;">
+      Built with <span style="color: #6366f1; font-weight: 600;">HTML · Tailwind CSS · Claude</span>
+    </p>
+  </div>
+
+  <!-- Footer: printed at bottom of CV page -->
+  <div style="text-align: center; padding: 14px 36px 12px 36px; border-top: 1px solid #f1f5f9; display: none;" class="print-footer">
+    <p style="font-size: 0.55rem; color: #d1d5db; letter-spacing: 0.08em;">
+      Built with HTML · Tailwind CSS · Claude
+    </p>
+  </div>
+
+  <style>
+    @media print {
+      .print-footer { display: block !important; }
+    }
+  </style>
+
+</body>
+</html>
