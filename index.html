@@ -8,12 +8,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&family=Instrument+Sans:wght@300;400;500;600&display=swap');
 
     :root {
-      --ink:    #0A0A0A;
-      --paper:  #F4F0E8;
-      --accent: #C8402A;
-      --mid:    #374151;
-      --dim:    #6B7280;
-      --rule:   #EDEAE4;
+      --ink:    #121820; /* Deep slate blue */
+      --paper:  #F0F4F8; /* Soft light grey-blue highlight */
+      --accent: #4B50B9; /* Solid deep purple-blue */
+      --mid:    #35495E; /* Solid deep base blue */
+      --dim:    #546A80; /* Mid-tone slate blue */
+      --rule:   #DEE6EE; /* Highlights blue-grey facet */
     }
 
     @page { size: A4; margin: 0; }
@@ -145,11 +145,11 @@
     .cv-contact a:hover { border-bottom-color: var(--accent); }
 
     .cv-contact .li a {
-      color: #F4B0A0;
-      border-bottom: 1px solid rgba(200,64,42,0.4);
+      color: #B0BECD; /* Soft light grey-blue */
+      border-bottom: 1px solid rgba(75,80,185,0.4);
     }
 
-    .cv-contact .li a:hover { border-bottom-color: #C8402A; }
+    .cv-contact .li a:hover { border-bottom-color: var(--accent); }
 
     /* Phone obfuscation — renders in browser + PDF via CSS, invisible to scrapers */
     .obf-phone { cursor: pointer; }
@@ -170,7 +170,7 @@
     /* accent rule */
     .cv-rule {
       height: 3px;
-      background: linear-gradient(90deg, #C8402A 0%, rgba(200,64,42,0.35) 65%, transparent 100%);
+      background: linear-gradient(90deg, #4B50B9 0%, rgba(75,80,185,0.35) 65%, transparent 100%);
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -179,7 +179,7 @@
     .cv-profile {
       padding: 10px 30px 10px;
       border-bottom: 1px solid var(--rule);
-      background: #FDFCFB;
+      background: var(--paper);
     }
 
     .profile-text {
@@ -219,7 +219,7 @@
       width: 27%;
       padding: 12px 14px 20px 30px;
       border-right: 1px solid var(--rule);
-      background: #FDFCFB;
+      background: var(--paper);
     }
 
     .sidebar-section { margin-bottom: 12px; }
