@@ -91,7 +91,9 @@
 
     /* ── HEADER ────────────────────────────────── */
     .cv-header {
-      background: var(--ink);
+      background: linear-gradient(rgba(18,24,32,0.85), rgba(18,24,32,0.85)), url('assets/hero_bg.png');
+      background-size: cover;
+      background-position: center;
       padding: 20px 30px 16px;
       display: flex;
       justify-content: space-between;
@@ -352,6 +354,37 @@
     .no-print .accent { color: var(--accent); font-weight: 600; }
 
     @media print { .no-print { display: none !important; } }
+
+    /* ── MOBILE RESPONSIVENESS ── */
+    @media screen and (max-width: 740px) {
+      .cv-page {
+        zoom: 1;
+        -moz-transform: none;
+        max-width: 100%;
+      }
+      .cv-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .cv-contact {
+        text-align: left;
+      }
+      .cv-sidebar {
+        float: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--rule);
+        padding: 20px 30px;
+      }
+      .cv-main {
+        margin-left: 0;
+        padding: 20px 30px;
+      }
+      .tags {
+        gap: 4px;
+      }
+    }
   </style>
 </head>
 
@@ -363,8 +396,8 @@
   <header class="cv-header">
     <div>
       <h1 class="cv-name">PAVAN KANWAR</h1>
-      <p class="cv-title">Senior AI Engineer &nbsp;·&nbsp; Multi-Agent Systems &nbsp;·&nbsp; Real-Time Infrastructure &nbsp;·&nbsp; Life-Critical AI &nbsp;·&nbsp; Founder</p>
-      <p class="cv-subtitle">LLM Orchestration &nbsp;·&nbsp; RL Environments &nbsp;·&nbsp; LiveKit/WebRTC &nbsp;·&nbsp; Cryptographic Evidence Chains &nbsp;·&nbsp; Concept → Production</p>
+      <p class="cv-title">Senior AI Engineer &nbsp;·&nbsp; Multi-Agent Systems &nbsp;·&nbsp; Life-Critical AI</p>
+      <p class="cv-subtitle">RL Environments &nbsp;·&nbsp; LiveKit/WebRTC &nbsp;·&nbsp; Cryptographic Evidence Chains &nbsp;·&nbsp; Concept → Production</p>
     </div>
     <div class="cv-contact">
       <div><a href="mailto:pavank101@gmail.com">pavank101@gmail.com</a></div>
@@ -396,7 +429,7 @@
         <p class="stack-group-label">AI, ML &amp; Backend</p>
         <div class="tags">
           <span class="tag">Multi-Agent RL</span>
-          <span class="tag">LLM Orchestration</span>
+          <span class="tag">LLM</span>
           <span class="tag">RAG Pipelines</span>
           <span class="tag">Vertex AI</span>
           <span class="tag">GCP</span>
@@ -626,7 +659,7 @@
         <p class="bul">Founded and scaled a full-stack digital product agency. Pioneered <strong>NFC proximity experiences</strong> for Nottingham University — 5 years before Apple enabled third-party NFC access. £10k grant; £40k investment offer from North West tech board.</p>
       </div>
 
-      <p class="footnote">20+ year track record: startup failure &amp; success, Lean UX research, rapid prototyping, ML and full-stack execution. Pavan refused a 3rd Founder role to join McKinsey — and lost out on £200m in equity. His current focus on startups is not an accident.</p>
+
 
     </main>
   </div>
