@@ -93,8 +93,20 @@
 
     .cv-contact .li a:hover { border-bottom-color: #C8402A; }
 
+    /* Phone obfuscation — renders in browser + PDF via CSS, invisible to scrapers */
+    .obf-phone { cursor: pointer; }
+    .obf-phone::before {
+      content: "+44\00a07946\00a0608\00a0200";
+      color: #F4F0E8;
+      font-family: 'DM Mono', monospace;
+      font-size: 7px;
+      border-bottom: 1px solid rgba(244,240,232,0.25);
+    }
+    .obf-phone:hover::before { border-bottom-color: var(--accent); }
+
     @media print {
       .cv-contact a { border-bottom: none; }
+      .obf-phone::before { border-bottom: none; }
     }
 
     /* accent rule */
@@ -138,16 +150,15 @@
 
     /* ── BODY ───────────────────────────────────── */
     .cv-body {
-      display: table;
+      display: block;
       width: 100%;
-      border-collapse: collapse;
+      overflow: hidden;
     }
 
     /* ── SIDEBAR ────────────────────────────────── */
     .cv-sidebar {
-      display: table-cell;
+      float: left;
       width: 27%;
-      vertical-align: top;
       padding: 12px 14px 20px 30px;
       border-right: 1px solid var(--rule);
       background: #FDFCFB;
@@ -214,7 +225,7 @@
     .edu-desc { font-size: 7.5px; color: var(--dim); line-height: 1.5; }
 
     /* ── MAIN ───────────────────────────────────── */
-    .cv-main { display: table-cell; vertical-align: top; padding: 12px 30px 20px 18px; }
+    .cv-main { margin-left: 27%; padding: 12px 30px 20px 18px; }
 
     .role-block { margin-bottom: 9px; page-break-inside: avoid; }
 
@@ -297,7 +308,7 @@
     </div>
     <div class="cv-contact">
       <div><a href="mailto:pavank101@gmail.com">pavank101@gmail.com</a></div>
-      <div><a href="tel:+447946608200">07946 608 200</a></div>
+      <div><span class="obf-phone" onclick="window.location.href='tel:+447946608200'"></span></div>
       <div>London, UK</div>
       <div class="li"><a href="https://linkedin.com/in/pavkanwar" target="_blank">linkedin.com/in/pavkanwar</a></div>
     </div>
@@ -309,7 +320,7 @@
   <section class="cv-profile">
     <span class="label">Profile</span>
     <p class="profile-text">
-      I am a <strong>Senior AI Engineer and Founder</strong> who builds production AI systems in life-critical, high-stakes environments — from real-time multi-agent RL architectures to low-latency A/V inference pipelines. I take total end-to-end ownership across the stack: backend AI infrastructure, native mobile (Swift/Kotlin), and system-level design decisions that determine whether a product survives production. <strong>I am building self-improving agents</strong> — deploying multi-model pipelines where Claude drives architecture and deep reasoning, Cursor accelerates implementation velocity, and AntiGravity's model ensemble orchestrates the operational loop. Planning, architecture, implementation, testing, and ops are all AI-augmented without sacrificing engineering rigour. My work spans multi-agent decision systems, real-time streaming infrastructure (LiveKit/WebRTC), RL environment design, and tamper-proof evidence chains. I bring product instinct — 20 years of understanding users, scoping MVPs, and shipping — to an engineering role that rarely gets both.
+      <strong>Senior AI Engineer and Founder</strong> building production AI systems for life-critical environments — multi-agent RL architectures, real-time A/V inference pipelines, and tamper-proof evidence chains. <strong>I am building self-improving agents:</strong> multi-model pipelines where Claude drives architecture, Cursor accelerates execution, and AntiGravity orchestrates the operational loop — planning, implementation, and ops all AI-augmented without sacrificing rigour. 20 years of product instinct inside an engineering role that rarely gets both.
     </p>
   </section>
 
